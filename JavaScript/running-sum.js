@@ -43,7 +43,7 @@
  *  Starting with a value of 6 gives the following sums: 
  *    6+-5 = 1 => 1+4 = 5 => 5+-2 = 3 => 3+3 = 6 => 6+1 = 7.
  *  Any initial value less than 6 will fail at the first element.
- */
+*/
 function minStart(arr) {
   let minSum = 0;
   let runningSum = 0;
