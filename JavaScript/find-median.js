@@ -33,10 +33,16 @@
  * 
  */
 function findMedian(arr) {
-    // By providing a comparison function (a, b) => a - b, the sort method compares numbers correctly: if the result is negative, a comes before b; if positive, b comes before a.
+    /** 
+     * By providing a comparison function (a, b) => a - b, the sort method compares numbers correctly: 
+     * if the result is negative, a comes before b; 
+     * if positive, b comes before a.
+    */ 
     const sortedArr = arr.sort((a,b) => a - b);
+
     // It uses Math.floor() to round down to the nearest whole number.
     const medianPosition = Math.floor(arr.length / 2);
+
     console.log(sortedArr[medianPosition]);
 }
 
